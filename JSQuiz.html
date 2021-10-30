@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fast code review</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet' href="css/bootstrap.min.css">
+
+    <style>
+      
+    </style>
+  </head>
+
+  <body>
+        <!-- Nav Bar -->
+        <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">
+          <div class="container-fluid">
+            <a class="h4 ms-5 me-1" href="#" style="color:white">BorntobeError !</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Free Access</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Special Deals</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+            <!-- Nav Bar End -->
+
+
+    <!-- Frame -->
+    <div class="container-fluid mx-auto mt-5" style="width: 90%;">
+
+    <!-- Header -->
+    <div class="display-2">Javascipt Quiz</div>
+    <p>You may can choose more than 1 time for correct answer, but <mark>You should know yourself why it is incorrect.</mark> goodluck.</p>
+
+    <!-- 1 -->
+    <div class="container-fluid border p-2">
+        1. Which choice for create a variable called <mark>userName</mark> and assign the value <mark>Martin</mark> to it.
+        <br><br>
+        <div class="d-grid gap-2">
+            <button id='1-1' onclick="incorrect1()" class="btn btn-outline-primary" type="button">console.log(userName = Martin)</button>
+            <button id='1-2' onclick="incorrect1()" class="btn btn-outline-primary" type="button">let userName = Martin</button>
+            <button id='1-3' onclick="correct1()" class="btn btn-outline-primary" type="button">var userName = "Martin"</button>
+            <button id='1-4' onclick="incorrect1()" class="btn btn-outline-primary" type="button">function userName("Martin")</button>
+          </div>
+          <div id='answer1' class="alert alert-light text-center" role="alert"></div>
+    </div><br>
+
+    <!-- 2 -->
+    <div class="container-fluid border p-2">
+        2. which code will show the multiply <mark>result</mark> in <mark>console</mark> when inspect web page
+        <br><br>
+        <div class="d-grid gap-2">
+            <button id='2-1' onclick="incorrect2()" class="btn btn-outline-primary" type="button">alert(5*3)</button>
+            <button id='2-2' onclick="incorrect2()" class="btn btn-outline-primary" type="button">command.log(5*3)</button>
+            <button id='2-3' onclick="correct2()" class="btn btn-outline-primary" type="button">console.log(7*4)</button>
+            <button id='2-4' onclick="incorrect2()" class="btn btn-outline-primary" type="button">print(5*3)</button>
+          </div>
+          <div id='answer2' class="alert alert-light text-center" role="alert"></div>
+    </div><br>
+
+    <!-- 3 -->
+    <div class="container-fluid border p-2">
+        3. which code will show <mark>"Martin"</mark> on <mark>alert</mark> message.
+        <br><br>
+        <div class="d-grid gap-2">
+            <button id='3-1' onclick="incorrect3()" class="btn btn-outline-primary" type="button">promp("Martin")</button>
+            <button id='3-2' onclick="correct3()" class="btn btn-outline-primary" type="button">alert("Martin")</button>
+            <button id='3-3' onclick="incorrect3()" class="btn btn-outline-primary" type="button">pop("Martin")</button>
+            <button id='3-4' onclick="incorrect3()" class="btn btn-outline-primary" type="button">alertbox("Martin")</button>
+          </div>
+          <div id='answer3' class="alert alert-light text-center" role="alert"></div>
+    </div><br>
+
+    <!-- 4 -->
+    <div class="container-fluid border p-2">
+        4. <mark> &lt;div id='name'&gt;...&lt;/div&gt; </mark> How to change the text in this tag to <mark>"Hello Martin"</mark>
+        <br><br>
+        <div class="d-grid gap-2">
+            <button id='4-1' onclick="correct4()" class="btn btn-outline-primary" type="button">document.getElementById('name')
+                .innerHTML = "Hello Martin"</button>
+            <button id='4-2' onclick="incorrect4()" class="btn btn-outline-primary" type="button">getElementbyID.innerHTML = "Hello Martin"</button>
+            <button id='4-3' onclick="incorrect4()" class="btn btn-outline-primary" type="button">(id='name') = "Hello Martin"</button>
+            <button id='4-4' onclick="incorrect4()" class="btn btn-outline-primary" type="button">document.getElementById('name')
+                .innerTEXT = "Hello Martin"</button>
+          </div>
+          <div id='answer4' class="alert alert-light text-center" role="alert"></div>
+    </div><br>
+
+    <!-- 5 -->
+    <div class="container-fluid border p-2">
+        5. which code will <mark>show the number from 0 to 5</mark> in <mark>console</mark>
+        <br><br>
+        <div class="d-grid gap-2">
+            <button id='5-1' onclick="incorrect5()" class="btn btn-outline-primary" type="button">
+                for i in range(0,6):<br>
+                print( i )
+            </button>
+            <button id='5-2' onclick="incorrect5()" class="btn btn-outline-primary" type="button">
+                for (i = 0; i &lt 5 ; i++){<br>
+                console.log( i ) }
+            </button>
+            <button id='5-3' onclick="incorrect5()" class="btn btn-outline-primary" type="button">
+                for i in (0,5):<br>
+                console.log(print (i+1))
+            </button>
+            <button id='5-4' onclick="correct5()" class="btn btn-outline-primary" type="button">
+                for (i = 0; i &lt 5 ; i++){<br>
+                console.log( i+1 ) }
+            
+          </div>
+          <div id='answer5' class="alert alert-light text-center" role="alert"></div>
+    </div><br>
+
+    <!-- 6 -->
+    <div class="container-fluid border p-2">
+        6. What will happend on code <br>
+        <mark>while</mark> (5 &lt;= 6){<br>
+        console.log('5 &lt;= 6')}
+        <br><br>
+        <div class="d-grid gap-2">
+            <button id='6-1' onclick="incorrect6()" class="btn btn-outline-primary" type="button">Nothing happend</button>
+            <button id='6-2' onclick="incorrect6()" class="btn btn-outline-primary" type="button">Alert box show true 1 time</button>
+            <button id='6-3' onclick="incorrect6()" class="btn btn-outline-primary" type="button">console repeat show '5 <= 6', 6 times</button>
+            <button id='6-4' onclick="correct6()" class="btn btn-outline-primary" type="button">console repeat show '5 <= 6', infinity times until web crash</button>
+          </div>
+          <div id='answer6' class="alert alert-light text-center" role="alert"></div>
+    </div><br>
+
+    <!-- 7 -->
+    <div class="container-fluid border p-2">
+        7. which code create <mark>function</mark> and show <mark>'Hello'</mark> message on console.
+        <br><br>
+        <div class="d-grid gap-2">
+            <button id='7-1' onclick="incorrect7()" class="btn btn-outline-primary" type="button">console.log('Hello')</button>
+            <button id='7-2' onclick="incorrect7()" class="btn btn-outline-primary" type="button">function sayHello(){console.log('Hello')}</button>
+            <button id='7-3' onclick="incorrect7()" class="btn btn-outline-primary" type="button">sayHello()</button>
+            <button id='7-4' onclick="correct7()" class="btn btn-outline-primary" type="button">function sayHello(){console.log('Hello')}<br>
+            sayHello()</button>
+          </div>
+          <div id='answer7' class="alert alert-light text-center" role="alert"></div>
+    </div><br>
+
+    <!-- 8 -->
+    <div class="container-fluid border p-2">
+        8. what <mark>type</mark> of value when get data from <mark>promt()</mark> input.
+        <br><br>
+        <div class="d-grid gap-2">
+            <button id='8-1' onclick="incorrect8()" class="btn btn-outline-primary" type="button">Int</button>
+            <button id='8-2' onclick="incorrect8()" class="btn btn-outline-primary" type="button">Float</button>
+            <button id='8-3' onclick="correct8()" class="btn btn-outline-primary" type="button">String</button>
+            <button id='8-4' onclick="incorrect8()" class="btn btn-outline-primary" type="button">NaN</button>
+          </div>
+          <div id='answer8' class="alert alert-light text-center" role="alert"></div>
+    </div><br>
+
+    <!-- 9 -->
+    <div class="container-fluid border p-2">
+        9. which code are <mark>incorrect</mark> to use <mark>onclick</mark> event driving.
+        <br><br>
+        <div class="d-grid gap-2">
+            <button id='9-1' onclick="incorrect9()" class="btn btn-outline-primary" type="button">&lt;button onclick=&quot;displayDate()&quot;&gt;The time is?&lt;/button&gt;</button>
+            <button id='9-2' onclick="incorrect9()" class="btn btn-outline-primary" type="button">&lt;p onclick=&quot;displayDate()&quot;&gt;The time is?&lt;/p&gt;</button>
+            <button id='9-3' onclick="correct9()" class="btn btn-outline-primary" type="button">&lt;body onclick=&quot;displayDate()&quot;&gt;The time is?&lt;/body&gt;</button>
+            <button id='9-4' onclick="incorrect9()" class="btn btn-outline-primary" type="button">&lt;div onclick=&quot;displayDate()&quot;&gt;The time is?&lt;/div&gt;</button>
+          </div>
+          <div id='answer9' class="alert alert-light text-center" role="alert"></div>
+    </div><br>
+
+    <!-- 10 -->
+    <div class="container-fluid border p-2">
+        10. which code are correct to use <mark>onload</mark> event driving.
+        <br><br>
+        <div class="d-grid gap-2">
+            <button id='10-1' onclick="incorrect10()" class="btn btn-outline-primary" type="button">&lt;button onload=&quot;displayDate()&quot;&gt;The time is?&lt;/button&gt;</button>
+            <button id='10-2' onclick="incorrect10()" class="btn btn-outline-primary" type="button">&lt;p onload=&quot;displayDate()&quot;&gt;The time is?&lt;/p&gt;</button>
+            <button id='10-3' onclick="correct10()" class="btn btn-outline-primary" type="button">&lt;body onload=&quot;displayDate()&quot;&gt;The time is?&lt;/body&gt;</button>
+            <button id='10-4' onclick="incorrect10()" class="btn btn-outline-primary" type="button">&lt;div onload=&quot;displayDate()&quot;&gt;The time is?&lt;/div&gt;</button>
+          </div>
+          <div id='answer10' class="alert alert-light text-center" role="alert"></div>
+    </div><br>
+
+
+
+
+
+
+
+    </div>
+    <!-- Frame End -->
+
+
+    
+   <br><br>
+    <!-- Footer -->
+   <div class="container-fluid p-4 text-center " style="background-color: lightskyblue; color: black;" >
+     <h4>update on 29/10/2021</h3><br>
+     <p class="mb-1">Create by Mr. Winai Nobteeranupab</p>
+     <p>For Introduction to Javascipt certificate</p>
+   </div>
+   <!-- Footer End -->
+
+
+
+
+
+
+    <script src="jsquiz.js"></script>
+    
+
+    
+</body>
+</html>
